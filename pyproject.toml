@@ -1,8 +1,38 @@
 [project]
-name = "linkbert-seo"
-version = "0.1.0"
-description = "Internal link suggestions powered by dejanseo/LinkBERT"
+name = "linkbert-pro"
+version = "1.0.0"
+description = "LinkBERT Pro: Enterprise-grade SEO Internal & External Link Architecture, Graph Simulation, and Citation Intelligence Engine"
+readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
+authors = [
+  { name = "Muyiwa Adekojede", email = "muyiwaadekojede@gmail.com" },
+  { name = "Dan Petrovic", email = "dan@dejanmarketing.com" }
+]
+keywords = [
+  "seo",
+  "internal-links",
+  "link-building",
+  "pagerank",
+  "graph-theory",
+  "nlp",
+  "bert",
+  "linkbert",
+  "eeat",
+  "citation-intelligence"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
 dependencies = [
   "torch",
   "transformers",
@@ -11,7 +41,14 @@ dependencies = [
   "lxml",
   "requests",
   "numpy",
+  "openpyxl"
 ]
+
+[project.urls]
+Homepage = "https://github.com/muyiwaadekojede/LinkBERT-Pro"
+Repository = "https://github.com/muyiwaadekojede/LinkBERT-Pro"
+"Original Research & Model" = "https://huggingface.co/dejanseo/LinkBERT"
+"Original Creator" = "https://dejanmarketing.com"
 
 [project.scripts]
 linkbert = "lb.cli:main"
